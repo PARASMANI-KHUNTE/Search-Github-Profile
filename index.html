@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AXIOS </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        #panel{
+            display: none;
+        }
+        
+     
+    </style>
+</head>
+<body class=" bg-gray-200  flex-col h-screen flex justify-center items-center">
+    <div>
+        <input id="userInput" type="text" class="mb-1 p-1" placeholder="search user">
+        <button onclick="getuser()" class="bg-blue-500 text-white p-1 ">Search</button>
+    </div>
+    <div id="panel"  class="min-h-[50vh] min-w-[90%] sm:min-h-[40vh] sm:min-w-[80%]  overflow-hidden flex justify-center items-center bg-white border rounded-xl shadow w-[50%] flex-col">
+        <div class="m-2">
+            <img id="profilePic" class="w-[100%] rounded" src="" alt="">
+        </div>
+        <h1 id="userTitle" class="align-center text-center"></h1>
+        <p id="bio" class="m-1 text-[12px] text-center text-gray-400" ></p>
+        <div class="fol flex justify-center space-x-10">
+            <a  id="following" class="p-2" href="#"></a>
+            <a  id="follower" class="p-2" href="#"></a>
+        </div>
+        
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
